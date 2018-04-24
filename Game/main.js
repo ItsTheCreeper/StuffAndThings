@@ -108,7 +108,7 @@ function startGame() {
     document.getElementById("score").innerHTML = score;
     document.getElementById("start").style.display = "none";
     ongoing = true;
-    time = 20;
+    time = 150;
     document.getElementById("time").innerHTML = time;
     interval = setInterval(timer, 400);
     setRandomPixel();
