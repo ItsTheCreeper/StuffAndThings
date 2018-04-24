@@ -1,0 +1,55 @@
+
+body {
+    font-family: "Overpass";
+    display: inline-block
+}
+
+.pixel {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    margin-right: 32px;
+}
+
+.big {
+    font-size: 48px;
+    margin: 0; 
+    margin-top: 21.4333px;
+}
+
+.scoretime {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 24px
+}
+
+.center {
+    text-align: center;
+}
+
+.reg {
+    font-size: 24px;
+}
+
+.blue {
+    color: blue;
+}
+
+#start {
+    font-family: "Overpass";
+    font-size: 24px;
+}
+
+#score, #time {
+    font-size: 48px;
+    font-weight: 900;
+}

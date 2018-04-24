@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="left">
+        <p class="big center">Game</h1>
+        <table>
+            <tr>
+                <td class="pixel" id="a1"></td>
+                <td class="pixel" id="a2"></td>
+                <td class="pixel" id="a3"></td>
+                <td class="pixel" id="a4"></td>
+                <td class="pixel" id="a5"></td>
+                <td class="pixel" id="a6"></td>
+                <td class="pixel" id="a7"></td>
+                <td class="pixel" id="a8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="b1"></td>
+                <td class="pixel" id="b2"></td>
+                <td class="pixel" id="b3"></td>
+                <td class="pixel" id="b4"></td>
+                <td class="pixel" id="b5"></td>
+                <td class="pixel" id="b6"></td>
+                <td class="pixel" id="b7"></td>
+                <td class="pixel" id="b8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="c1"></td>
+                <td class="pixel" id="c2"></td>
+                <td class="pixel" id="c3"></td>
+                <td class="pixel" id="c4"></td>
+                <td class="pixel" id="c5"></td>
+                <td class="pixel" id="c6"></td>
+                <td class="pixel" id="c7"></td>
+                <td class="pixel" id="c8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="d1"></td>
+                <td class="pixel" id="d2"></td>
+                <td class="pixel" id="d3"></td>
+                <td class="pixel" id="d4"></td>
+                <td class="pixel" id="d5"></td>
+                <td class="pixel" id="d6"></td>
+                <td class="pixel" id="d7"></td>
+                <td class="pixel" id="d8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="e1"></td>
+                <td class="pixel" id="e2"></td>
+                <td class="pixel" id="e3"></td>
+                <td class="pixel" id="e4"></td>
+                <td class="pixel" id="e5"></td>
+                <td class="pixel" id="e6"></td>
+                <td class="pixel" id="e7"></td>
+                <td class="pixel" id="e8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="f1"></td>
+                <td class="pixel" id="f2"></td>
+                <td class="pixel" id="f3"></td>
+                <td class="pixel" id="f4"></td>
+                <td class="pixel" id="f5"></td>
+                <td class="pixel" id="f6"></td>
+                <td class="pixel" id="f7"></td>
+                <td class="pixel" id="f8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="g1"></td>
+                <td class="pixel" id="g2"></td>
+                <td class="pixel" id="g3"></td>
+                <td class="pixel" id="g4"></td>
+                <td class="pixel" id="g5"></td>
+                <td class="pixel" id="g6"></td>
+                <td class="pixel" id="g7"></td>
+                <td class="pixel" id="g8"></td>
+            </tr>
+            <tr>
+                <td class="pixel" id="h1"></td>
+                <td class="pixel" id="h2"></td>
+                <td class="pixel" id="h3"></td>
+                <td class="pixel" id="h4"></td>
+                <td class="pixel" id="h5"></td>
+                <td class="pixel" id="h6"></td>
+                <td class="pixel" id="h7"></td>
+                <td class="pixel" id="h8"></td>
+            </tr>
+        </table>
+        <button id="start" onclick="startGame()">Start Game</button>
+    </div>
+    <div class="right">
+        <p class="big center">Eat the <span class="blue">blue</span> dots to gain score.</p>
+        <p class="reg center">Use <span class="blue">W, A, S, D</span> keys to move</p>
+        <table class="scoretime center">
+            <tr class="scoretime center">
+                <td class="scoretime center">Score:</td>
+                <td class="scoretime center">Time:</td>
+            </tr>
+            <tr class="scoretime center">
+                <td class="scoretime center" id="score">0</td>
+                <td class="scoretime center" id="time">0</td>
+            </tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
