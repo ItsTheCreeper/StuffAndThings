@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body onload="setRandomColor()">
+    <div style="display: inline-block">
+        <div id="datetime" class="program">
+            <p id="time"></p>
+            <p id="date"></p>
+        </div>
+        <div id="clock" class="program">
+            <canvas height="300" length="300" style="border: 2px solid black" id="analog"></canvas>
+        </div>
+    </div>
+    <script src="digital.js"></script>
+    <script src="analog.js"></script>
+</body>
+</html>
