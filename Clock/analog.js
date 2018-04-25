@@ -1,4 +1,5 @@
 
+// code from w3schools.com
 var canvas = document.getElementById("analog");
 canvas.style.backgroundColor = "#333333";
 var ctx = canvas.getContext("2d");
