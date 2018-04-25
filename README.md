@@ -10,3 +10,7 @@ you can:
   - use the things i make
   - credit me for the things i make
   - do whatever you want to do with this repo
+  - help me make random stuff
+  
+***note:*** please commit files that are html, css, or javascript only.  
+you can upload/do whatever you like, but please don't do/add bad/offensive things to my repo.
