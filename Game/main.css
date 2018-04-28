@@ -26,10 +26,10 @@ body {
     margin-top: 21.4333px;
 }
 
-.scoretime {
+.scoretime, #scoretable, .stc {
     border: 1px solid black;
     padding: 2px;
-    font-size: 24px
+    font-size: 24px;
 }
 
 .center {
@@ -44,6 +44,10 @@ body {
     color: blue;
 }
 
+.license {
+    width: 290px;
+}
+
 #start {
     font-family: "Overpass";
     font-size: 24px;
@@ -52,4 +56,9 @@ body {
 #score, #time {
     font-size: 48px;
     font-weight: 900;
+}
+
+#scoretable {
+    margin-top: 6px;
+    display: none;
 }

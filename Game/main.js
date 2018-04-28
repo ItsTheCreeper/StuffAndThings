@@ -7,6 +7,7 @@ var fcr = 0;
 var fcc = 0;
 var score = 0;
 var time = 0;
+var ts = 0;
 var ongoing = false;
 var interval;
 var currentPixel = ["", ""];
@@ -138,6 +139,50 @@ function timer() {
         for (var i = 0; i < pixels.length; i++) {
             pixels[i].style.backgroundColor = "white";
         }
+        appendScore();
     }
 }
 
+function appendScore() {
+    var trow = document.getElementsByClassName("tr");
+    var datetime = parseDate();
+    document.getElementById("scoretable").style.display = "table";
+    var tr = document.createElement("TR");
+    var tdtime = document.createElement("TD");
+    var tdscore = document.createElement("TD");
+    tr.setAttribute("class", "stc");
+    tr.setAttribute("class", "tr");
+    document.getElementById("scoretable").appendChild(tr);
+    tdtime.setAttribute("class", "stc");
+    tdscore.setAttribute("class", "stc");
+    var dt = document.createTextNode(datetime);
+    var scr = document.createTextNode(score);
+    tdtime.appendChild(dt);
+    tdscore.appendChild(scr);
+    trow[ts].appendChild(tdtime);
+    trow[ts].appendChild(tdscore);
+    ts += 1;
+}
+
+function parseDate() {
+    var date = new Date;
+    var months = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    var datestring = months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear() + " (" +
+        date.getHours() + ":" + minutes() + ":" + seconds() + ")";
+    function seconds() {
+        var sec = date.getSeconds();
+        if (sec < 10) {
+            sec = "0" + sec;
+        }
+        return sec;
+    }
+    function minutes() {
+        var min = date.getMinutes();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        return min;
+    }
+    return datestring;
+}

@@ -96,10 +96,11 @@
             </tr>
         </table>
         <button id="start" onclick="startGame()">Start Game</button>
+        <p class="license">Made by Clark Estreller (ItsTheCreeper). Under the MIT License.</p>
     </div>
     <div class="right">
-        <p class="big center">Eat the <span class="blue">blue</span> dots to gain score.</p>
-        <p class="reg center">Use <span class="blue">W, A, S, D</span> keys to move</p>
+        <p class="big">Eat the <span class="blue">blue</span> dots to gain score.</p>
+        <p class="reg">Use <span class="blue">W, A, S, D</span> keys to move</p>
         <table class="scoretime center">
             <tr class="scoretime center">
                 <td class="scoretime center">Score:</td>
@@ -109,8 +110,14 @@
                 <td class="scoretime center" id="score">0</td>
                 <td class="scoretime center" id="time">0</td>
             </tr>
+            <table id="scoretable">
+                    <tr class="stc">
+                        <td class="stc">Date and Time</td>
+                        <td class="stc">Score</td>
+                    </tr>
+            </table>
         </table>
-        <p>Made by Clark Estreller (ItsTheCreeper). Under the MIT License.</p>
+        
     </div>
     <script src="main.js"></script>
 </body>
