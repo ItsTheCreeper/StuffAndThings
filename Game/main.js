@@ -108,12 +108,9 @@ function startGame() {
     score = 0;
     document.getElementById("score").innerHTML = score;
     document.getElementById("start").style.display = "none";
-    ongoing = true;
-    time = 150;
-    document.getElementById("time").innerHTML = time;
-    interval = setInterval(timer, 400);
-    setRandomPixel();
-    setRandomFood();
+    time = 3;
+    startTimer();
+    interval = setInterval(startTimer, 1000);
 }
 
 function timer() {
@@ -140,6 +137,21 @@ function timer() {
             pixels[i].style.backgroundColor = "white";
         }
         appendScore();
+    }
+}
+
+function startTimer() {
+    document.getElementById("time").style.color = "green";
+    document.getElementById("time").innerHTML = time;
+    if (time == 0) {
+        clearInterval(interval);
+        interval = setInterval(timer, 400);
+        ongoing = true;
+        time = 150
+        setRandomPixel();
+        setRandomFood();
+    } else {
+        time -= 1;
     }
 }
 
