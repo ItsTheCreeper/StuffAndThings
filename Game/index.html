@@ -10,97 +10,101 @@
     <title>Game</title>
 </head>
 
-<body>
+<body onload="sizeOnLoad()">
     <div class="left">
         <p class="big center">Game</h1>
-        <table>
-            <tr>
-                <td class="pixel" id="a1"></td>
-                <td class="pixel" id="a2"></td>
-                <td class="pixel" id="a3"></td>
-                <td class="pixel" id="a4"></td>
-                <td class="pixel" id="a5"></td>
-                <td class="pixel" id="a6"></td>
-                <td class="pixel" id="a7"></td>
-                <td class="pixel" id="a8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="b1"></td>
-                <td class="pixel" id="b2"></td>
-                <td class="pixel" id="b3"></td>
-                <td class="pixel" id="b4"></td>
-                <td class="pixel" id="b5"></td>
-                <td class="pixel" id="b6"></td>
-                <td class="pixel" id="b7"></td>
-                <td class="pixel" id="b8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="c1"></td>
-                <td class="pixel" id="c2"></td>
-                <td class="pixel" id="c3"></td>
-                <td class="pixel" id="c4"></td>
-                <td class="pixel" id="c5"></td>
-                <td class="pixel" id="c6"></td>
-                <td class="pixel" id="c7"></td>
-                <td class="pixel" id="c8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="d1"></td>
-                <td class="pixel" id="d2"></td>
-                <td class="pixel" id="d3"></td>
-                <td class="pixel" id="d4"></td>
-                <td class="pixel" id="d5"></td>
-                <td class="pixel" id="d6"></td>
-                <td class="pixel" id="d7"></td>
-                <td class="pixel" id="d8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="e1"></td>
-                <td class="pixel" id="e2"></td>
-                <td class="pixel" id="e3"></td>
-                <td class="pixel" id="e4"></td>
-                <td class="pixel" id="e5"></td>
-                <td class="pixel" id="e6"></td>
-                <td class="pixel" id="e7"></td>
-                <td class="pixel" id="e8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="f1"></td>
-                <td class="pixel" id="f2"></td>
-                <td class="pixel" id="f3"></td>
-                <td class="pixel" id="f4"></td>
-                <td class="pixel" id="f5"></td>
-                <td class="pixel" id="f6"></td>
-                <td class="pixel" id="f7"></td>
-                <td class="pixel" id="f8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="g1"></td>
-                <td class="pixel" id="g2"></td>
-                <td class="pixel" id="g3"></td>
-                <td class="pixel" id="g4"></td>
-                <td class="pixel" id="g5"></td>
-                <td class="pixel" id="g6"></td>
-                <td class="pixel" id="g7"></td>
-                <td class="pixel" id="g8"></td>
-            </tr>
-            <tr>
-                <td class="pixel" id="h1"></td>
-                <td class="pixel" id="h2"></td>
-                <td class="pixel" id="h3"></td>
-                <td class="pixel" id="h4"></td>
-                <td class="pixel" id="h5"></td>
-                <td class="pixel" id="h6"></td>
-                <td class="pixel" id="h7"></td>
-                <td class="pixel" id="h8"></td>
-            </tr>
-        </table>
-        <button id="start" onclick="startGame()">Start Game</button>
-        <p class="license">Made by Clark Estreller (ItsTheCreeper). Under the MIT License.</p>
+            <p class="center" id="desc">Change the size of the pixels! (current size: <span id="size">30</span>)</p>
+            <input type="range" style="margin: auto; width: 500px" min="5" max="30" id="slider" value="30"/>
+            <table style="margin: auto">
+                <tr>
+                    <td class="pixel" id="a1"></td>
+                    <td class="pixel" id="a2"></td>
+                    <td class="pixel" id="a3"></td>
+                    <td class="pixel" id="a4"></td>
+                    <td class="pixel" id="a5"></td>
+                    <td class="pixel" id="a6"></td>
+                    <td class="pixel" id="a7"></td>
+                    <td class="pixel" id="a8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="b1"></td>
+                    <td class="pixel" id="b2"></td>
+                    <td class="pixel" id="b3"></td>
+                    <td class="pixel" id="b4"></td>
+                    <td class="pixel" id="b5"></td>
+                    <td class="pixel" id="b6"></td>
+                    <td class="pixel" id="b7"></td>
+                    <td class="pixel" id="b8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="c1"></td>
+                    <td class="pixel" id="c2"></td>
+                    <td class="pixel" id="c3"></td>
+                    <td class="pixel" id="c4"></td>
+                    <td class="pixel" id="c5"></td>
+                    <td class="pixel" id="c6"></td>
+                    <td class="pixel" id="c7"></td>
+                    <td class="pixel" id="c8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="d1"></td>
+                    <td class="pixel" id="d2"></td>
+                    <td class="pixel" id="d3"></td>
+                    <td class="pixel" id="d4"></td>
+                    <td class="pixel" id="d5"></td>
+                    <td class="pixel" id="d6"></td>
+                    <td class="pixel" id="d7"></td>
+                    <td class="pixel" id="d8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="e1"></td>
+                    <td class="pixel" id="e2"></td>
+                    <td class="pixel" id="e3"></td>
+                    <td class="pixel" id="e4"></td>
+                    <td class="pixel" id="e5"></td>
+                    <td class="pixel" id="e6"></td>
+                    <td class="pixel" id="e7"></td>
+                    <td class="pixel" id="e8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="f1"></td>
+                    <td class="pixel" id="f2"></td>
+                    <td class="pixel" id="f3"></td>
+                    <td class="pixel" id="f4"></td>
+                    <td class="pixel" id="f5"></td>
+                    <td class="pixel" id="f6"></td>
+                    <td class="pixel" id="f7"></td>
+                    <td class="pixel" id="f8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="g1"></td>
+                    <td class="pixel" id="g2"></td>
+                    <td class="pixel" id="g3"></td>
+                    <td class="pixel" id="g4"></td>
+                    <td class="pixel" id="g5"></td>
+                    <td class="pixel" id="g6"></td>
+                    <td class="pixel" id="g7"></td>
+                    <td class="pixel" id="g8"></td>
+                </tr>
+                <tr>
+                    <td class="pixel" id="h1"></td>
+                    <td class="pixel" id="h2"></td>
+                    <td class="pixel" id="h3"></td>
+                    <td class="pixel" id="h4"></td>
+                    <td class="pixel" id="h5"></td>
+                    <td class="pixel" id="h6"></td>
+                    <td class="pixel" id="h7"></td>
+                    <td class="pixel" id="h8"></td>
+                </tr>
+            </table>
+            <button id="start" onclick="startGame()">Start Game</button>
+            <p class="license">Made by Clark Estreller (ItsTheCreeper). Under the MIT License.</p>
     </div>
     <div class="right">
-        <p class="big">Eat the <span class="blue">blue</span> dots to gain score.</p>
-        <p class="reg">Use <span class="blue">W, A, S, D</span> keys to move</p>
+        <p class="big">Eat the
+            <span class="blue">blue</span> dots to gain score.</p>
+        <p class="reg">Use
+            <span class="blue">W, A, S, D</span> keys to move</p>
         <table class="scoretime center">
             <tr class="scoretime center">
                 <td class="scoretime center">Score:</td>
@@ -111,14 +115,15 @@
                 <td class="scoretime center" id="time">0</td>
             </tr>
             <table id="scoretable">
-                    <tr class="stc">
-                        <td class="stc">Date and Time</td>
-                        <td class="stc">Score</td>
-                    </tr>
+                <tr class="stc">
+                    <td class="stc">Date and Time</td>
+                    <td class="stc">Score</td>
+                </tr>
             </table>
         </table>
-        
     </div>
+
+
     <script src="main.js"></script>
 </body>
 

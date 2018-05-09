@@ -12,6 +12,7 @@ var ongoing = false;
 var interval;
 var currentPixel = ["", ""];
 var currentFood = ["", ""];
+var slider = document.getElementById("slider");
 
 document.onkeydown = move;
 
@@ -109,6 +110,8 @@ function startGame() {
     document.getElementById("score").innerHTML = score;
     document.getElementById("start").style.display = "none";
     time = 3;
+    document.getElementById("desc").style.display = "none";
+    document.getElementById("slider").style.display = "none";
     startTimer();
     interval = setInterval(startTimer, 1000);
 }
@@ -136,6 +139,8 @@ function timer() {
         for (var i = 0; i < pixels.length; i++) {
             pixels[i].style.backgroundColor = "white";
         }
+        document.getElementById("desc").style.display = "inherit";
+        document.getElementById("slider").style.display = "inherit";
         appendScore();
     }
 }
@@ -197,4 +202,21 @@ function parseDate() {
         return min;
     }
     return datestring;
+}
+
+function sizeOnLoad() {
+    var slider = document.getElementById("slider");
+    var pixels = document.getElementsByClassName('pixel');
+    for (var i = 0; i < pixels.length; i++) {
+        pixels[i].style = "border-radius: " + slider.value + "px; padding: " + slider.value + "px";
+    }
+    document.getElementById("size").innerHTML = slider.value;
+}
+
+slider.oninput = function () {
+    var pixels = document.getElementsByClassName('pixel');
+    for (var i = 0; i < pixels.length; i++) {
+        pixels[i].style = "border-radius: " + this.value + "px; padding: " + this.value + "px";
+    }
+    document.getElementById("size").innerHTML = this.value;
 }
