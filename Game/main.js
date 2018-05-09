@@ -93,7 +93,7 @@ function setRandomFood() {
     }
     currentFood[0] = rows[fcr];
     currentFood[1] = cols[fcc];
-    document.getElementById(currentFood[0] + currentFood[1]).style.backgroundColor = "blue";
+    document.getElementById(currentFood[0] + currentFood[1]).style.backgroundColor = "red";
 }
 
 function clear() {
