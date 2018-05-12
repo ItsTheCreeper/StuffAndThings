@@ -99,7 +99,7 @@ function setRandomFood() {
 function clear() {
     var pixels = document.getElementsByClassName('pixel');
     for (var i = 0; i < pixels.length; i++) {
-        if (pixels[i].style.backgroundColor != "blue") {
+        if (pixels[i].style.backgroundColor != "red") {
             pixels[i].style.backgroundColor = "white";
         }
     }
