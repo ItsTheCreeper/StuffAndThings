@@ -93,13 +93,13 @@ function setRandomFood() {
     }
     currentFood[0] = rows[fcr];
     currentFood[1] = cols[fcc];
-    document.getElementById(currentFood[0] + currentFood[1]).style.backgroundColor = "blue";
+    document.getElementById(currentFood[0] + currentFood[1]).style.backgroundColor = "red";
 }
 
 function clear() {
     var pixels = document.getElementsByClassName('pixel');
     for (var i = 0; i < pixels.length; i++) {
-        if (pixels[i].style.backgroundColor != "blue") {
+        if (pixels[i].style.backgroundColor != "red") {
             pixels[i].style.backgroundColor = "white";
         }
     }
