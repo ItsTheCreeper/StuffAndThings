@@ -12,14 +12,12 @@ body {
 /* http://jsfiddle.net/paislee/wzSmc/ */
 
 .full {
-    background-color: #e8e8e8;
     width: 100%;
     height: auto;
     bottom: 0px;
     top: 0px;
     left: 0;
     position: absolute;
-    opacity: 0.7;
 }
 
 .center {
@@ -36,11 +34,11 @@ body {
     font-size: 128px;
     margin: 0;
     text-align: center;
-    color: grey;
+    color: black;
     opacity: 1.00;
     z-index: 4;
     margin-bottom: 0;
-    
+    transition: 0.5s;
 }
 
 .button {
