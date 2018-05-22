@@ -1,9 +1,73 @@
 
 body {
     content: "";
+    font-family: "Overpass";
     background: url("bg.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/* http://jsfiddle.net/paislee/wzSmc/ */
+
+.full {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.center {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+}
+
+.output {
+    display: block;
+    font-size: 128px;
+    margin: 0;
+    text-align: center;
+    color: grey;
+    opacity: 1.00;
+    z-index: 4;
+    margin-bottom: 0;
+    
+}
+
+.button {
+    margin-top: 0;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inherit;
+    background-color: lightblue;
+    border: 2px solid cyan;
+    margin-bottom: 10px;
+    color: white;
+    padding: 20px;
+    border-radius: 1000px;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transition: 0.2s;
+    background-color: mediumblue;
+    border-color: midnightblue;
+}
+
+.button:active {
+    transition: 0.2s;
+    background-color: blue;
+    border-color: skyblue;
 }

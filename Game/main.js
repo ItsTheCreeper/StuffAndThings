@@ -108,12 +108,20 @@ function clear() {
 function startGame() {
     score = 0;
     document.getElementById("score").innerHTML = score;
-    document.getElementById("start").style.display = "none";
+    document.getElementById("start").style = "display: none";
     time = 3;
-    document.getElementById("desc").style.display = "none";
+    document.getElementById("desc").style = "display: none; transition: 1s";
     document.getElementById("slider").style.display = "none";
+    document.getElementById("slider").style.transition = "1s";
     startTimer();
     interval = setInterval(startTimer, 1000);
+    var pixels = document.getElementsByClassName('pixel');
+    setTimeout(() => {
+        for (var i = 0; i < pixels.length; i++) {
+            pixels[i].style.transition = "0.1s";
+        }
+    }, 3000);
+
 }
 
 function timer() {
@@ -139,8 +147,8 @@ function timer() {
         for (var i = 0; i < pixels.length; i++) {
             pixels[i].style.backgroundColor = "white";
         }
-        document.getElementById("desc").style.display = "inherit";
-        document.getElementById("slider").style.display = "inherit";
+        document.getElementById("desc").style.display = "block";
+        document.getElementById("slider").style.display = "block";
         appendScore();
     }
 }
@@ -152,7 +160,7 @@ function startTimer() {
         clearInterval(interval);
         interval = setInterval(timer, 400);
         ongoing = true;
-        time = 150
+        time = 10
         setRandomPixel();
         setRandomFood();
     } else {
